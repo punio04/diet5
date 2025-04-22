@@ -584,7 +584,7 @@ plan
 }
 
 .cta-space {
-  padding: 0 0 8rem 0;
+  padding: 0 0 5rem 0;
 }
 
 .combiBoxTtl {
@@ -701,7 +701,7 @@ ul.works_list li p {
 
 .works2_wrap {
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 5rem 0;
 }
 
 .slider-works {
@@ -1032,11 +1032,6 @@ ul.works_list li p {
   font-size: 13px;
   line-height: 1;
   background-color: #3D5763;
-}
-
-.works2_wrap {
-  margin: 0 auto;
-  padding: 100px 0;
 }
 
 .slider-works {
@@ -1382,6 +1377,18 @@ button.slide-arrow2 {
   margin: 0 auto !important;
 }
 
+.mt10 {
+  margin-top: 5rem;
+}
+
+.py10 {
+  padding: 5rem 0;
+}
+
+.pt8 {
+  padding-top: 4rem;
+}
+
 @media not all and (min-width: 960px) {
   .combiBox {
     padding: 20px 10px;
@@ -1404,11 +1411,15 @@ button.slide-arrow2 {
   }
 
   .mainAct.cta-space {
-    padding: 0 1.0rem 4rem 1.0rem !important;
+    padding: 0 1.0rem 3rem 1.0rem !important;
   }
 
   .slider-works .next-arrow2 {
     right: calc(50% - 180px);
+  }
+
+  .company {
+    padding: 3rem 0 0 0;
   }
 
   .slider-works .prev-arrow2 {
@@ -1462,7 +1473,11 @@ button.slide-arrow2 {
 
   .works2_wrap {
     margin: 0 auto;
-    padding: 4rem 0;
+    padding: 3rem 0;
+  }
+
+  .pt8 {
+    padding-top: 2rem;
   }
 
   .techOnayamiTxt h4 {
@@ -1515,6 +1530,14 @@ button.slide-arrow2 {
 
   .plan-item {
     padding: 10px 0 0px 0;
+  }
+
+  .py10 {
+    padding: 3rem 0;
+  }
+
+  .mt10 {
+    margin-top: 3rem;
   }
 }
 
