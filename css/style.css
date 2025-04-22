@@ -200,6 +200,7 @@ main {
   }
 }
 
+
 /*----------------------------------
 recommend
 ---------------------------------- */
@@ -544,6 +545,11 @@ plan
 
 .profileName {
   text-align: left;
+  font-size: 1.1em;
+}
+
+.profileTxt {
+  width: 52%;
 }
 
 .profileHistory {
@@ -1438,6 +1444,19 @@ button.slide-arrow2 {
   }
 }
 
+@media all and (max-width: 960px) {
+  .title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .profileTxt {
+    width: 100%;
+  }
+}
+
+
 @media (max-width: 340px) {
   .slider-works .slick-arrow {
     width: 50px;
@@ -1484,4 +1503,5 @@ button.slide-arrow2 {
     top: 20px;
     left: 17px;
   }
+
 }
