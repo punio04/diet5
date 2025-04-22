@@ -816,7 +816,7 @@ button.slide-arrow2 {
 .works2_list .slick-slide {
   height: auto !important;
   background: #eef4f5;
-  border-radius: 8px;
+  border-radius: 0px;
   box-sizing: border-box;
 }
 
@@ -1418,8 +1418,8 @@ button.slide-arrow2 {
 
   .works2_list li {
     background: #eef4f5;
-    padding: 40px;
-    border-radius: 8px;
+    padding: 25px;
+    border-radius: 0px;
     box-sizing: border-box;
   }
 
