@@ -210,7 +210,7 @@ recommend
 
 .recommendText {
   padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.7);
+  background: #fffbf1;
   text-align: center;
   position: absolute;
   right: 3rem;
@@ -365,7 +365,7 @@ reason
 }
 
 .reasonBoxTtl {
-  font-size: 1.5em;
+  font-size: 1.8em;
   color: #28A5A0;
   text-align: center;
   line-height: 1.5em;
@@ -373,6 +373,18 @@ reason
 
 .reasonBoxMedia img {
   width: 100%;
+}
+
+.techOnayami {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 1rem;
+  background: white;
+  border: 1px solid #e6e6e6;
+  gap: 10px 5%;
+  width: 80%;
+  margin: 1.7rem auto 0;
 }
 
 @media not all and (min-width: 960px) {
@@ -387,7 +399,7 @@ reason
   }
 
   .reasonBoxTtl {
-    font-size: 1.4em;
+    font-size: 1.8em;
     text-align: center;
   }
 }
@@ -485,7 +497,7 @@ plan
 
 @media (min-width: 960px) {
   .plan-item__tit--fourth {
-    font-size: min(30 / 1280* 100* var(--vw, 1vw), 1.875rem);
+    font-size: min(30 / 1280* 100* var(--vw, 1vw), 1.8rem);
   }
 }
 
@@ -585,7 +597,7 @@ plan
 }
 
 .techOnayamiMedia {
-  width: 22%;
+  width: 34%;
   text-align: right;
 }
 
@@ -601,9 +613,14 @@ plan
 }
 
 .techOnayamiTxt h4 {
-  font-size: 1.6em;
+  font-size: 1.8em;
   margin-bottom: 1rem;
   color: #28A5A0;
+}
+
+.techOnayamiTxt ul li {
+  line-height: 1.8;
+  font-size: 1.3em;
 }
 
 .combiBox {
@@ -650,10 +667,10 @@ plan
 }
 
 .plan-box {
-  max-width: 100%;
+  max-width: 80%;
   margin-right: auto;
   margin-left: auto;
-  padding: min(30 / 1280 * 100 * var(--vw, 1vw), 1.875rem) min(30 / 1280 * 100 * var(--vw, 1vw), 1.875rem) min(40 / 1280 * 100 * var(--vw, 1vw), 2.5rem);
+  padding: min(30 / 1280 * 100 * var(--vw, 1vw), 1.875rem) min(30 / 1280 * 100 * var(--vw, 1vw), 1.875rem) min(30px / 1280 * 100 * var(--vw, 1vw), 2.5rem);
 }
 
 ul.works_list {
@@ -1339,6 +1356,32 @@ button.slide-arrow2 {
   line-height: 175%;
 }
 
+.recommendTextList li::before {
+  content: "";
+  display: inline-block;
+  width: 1.4em;
+  /* 画像サイズ調整 */
+  height: 1.4em;
+  margin-right: 0.5em;
+  background-image: url('../img/icon_check.png');
+  /* ←アイコン画像のパスに置き換えてね */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}
+
+.recommendTextList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto !important;
+}
+
 @media not all and (min-width: 960px) {
   .combiBox {
     padding: 20px 10px;
@@ -1348,7 +1391,7 @@ button.slide-arrow2 {
 
 @media not all and (min-width: 960px) {
   .techOnayamiMedia {
-    width: 60%;
+    width: 50%;
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
@@ -1441,6 +1484,37 @@ button.slide-arrow2 {
     width: 100%;
     padding-bottom: 0px;
     line-height: 175%;
+  }
+
+  .techOnayami {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 1rem;
+    background: white;
+    border: 1px solid #e6e6e6;
+    gap: 10px 5%;
+    width: 100%;
+    margin: 1.7rem auto 0;
+  }
+
+  .techOnayamiTxt {
+    width: 60%;
+  }
+
+  .list-simple li {
+    list-style: disc;
+    list-style-position: inside;
+    text-indent: -1.5em;
+    padding-left: 1em;
+  }
+
+  .plan-box {
+    max-width: 100%;
+  }
+
+  .plan-item {
+    padding: 10px 0 0px 0;
   }
 }
 
