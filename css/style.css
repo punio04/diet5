@@ -832,8 +832,7 @@ table.works_table {
   border-collapse: collapse;
   border-spacing: 0;
   margin: 0 auto 0 auto;
-  font-size: 0.9em;
-  line-height: 1.8;
+  font-size: 0.7em;
 }
 
 table.works_table th {
@@ -853,7 +852,7 @@ table.works_table td {
   border-width: 0 0 1px 1px;
   background: #ffffff;
   text-align: left;
-
+  line-height: 1.7;
 }
 
 a:focus {
@@ -1370,6 +1369,11 @@ button.slide-arrow2 {
   margin: 0 auto !important;
 }
 
+.container02 {
+  max-width: 1000px;
+  margin: 0 auto !important;
+}
+
 .mt10 {
   margin-top: 5rem;
 }
@@ -1380,6 +1384,12 @@ button.slide-arrow2 {
 
 .pt8 {
   padding-top: 4rem;
+}
+
+@media (min-width: 960px) {
+  .g-header__logo {
+    width: min(220 / 375* 100* var(--vw, 1vw), 160px)!important;
+  }
 }
 
 @media not all and (min-width: 960px) {
@@ -1541,8 +1551,17 @@ button.slide-arrow2 {
     line-height: 1.5;
   }
 
+  .recommendText {
+    padding: 1rem 1rem;
+    background: #fffbf1;
+    text-align: center;
+    position: static;
+    right: 3rem;
+    bottom: 4.6rem;
+  }
+
   .recommendTextList li {
-    font-size: 0.9em;
+    font-size: 1.2em;
   }
 
   .recommendTextList li::before {
